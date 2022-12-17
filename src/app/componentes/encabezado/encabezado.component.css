@@ -1,0 +1,27 @@
+.container{
+    background-color: burlywood;    
+}
+
+hr{
+    width: 30%;
+}
+
+span a{
+    text-decoration: none;
+    margin: 5px;
+    size: 50px;
+}
+span a i{
+    color: white;
+}
+
+#autor{
+    color: whitesmoke;
+    font-size: 40px;  
+
+}
+
+#carrera{
+    color: aqua;
+    font-size: 30px;
+}
