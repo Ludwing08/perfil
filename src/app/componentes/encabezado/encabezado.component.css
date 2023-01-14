@@ -1,27 +1,40 @@
 .container{
-    background-color: burlywood;    
+    display: block;
+    background: rgb(143,93,236);
+    background: linear-gradient(90deg, rgba(143,93,236,1) 18%, rgba(101,92,240,1) 42%, rgba(47,96,249,1) 72%);         
 }
 
 hr{
-    width: 30%;
+    width: 50%;
+    border-width: 3px;
+    color: white;
+    line-height: 0;
 }
 
 span a{
     text-decoration: none;
     margin: 5px;
     size: 50px;
+    line-height: 0;
 }
 span a i{
     color: white;
+    margin-bottom: 10px;    
+}
+
+.row{
+    padding-left: 30px;    
 }
 
 #autor{
-    color: whitesmoke;
+    color: #ffffff;
     font-size: 40px;  
+    margin-top: 55px;
+    line-height: 40px;
 
 }
 
 #carrera{
-    color: aqua;
-    font-size: 30px;
+    color: #AADAE4;
+    font-size: 30px;    
 }

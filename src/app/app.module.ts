@@ -7,6 +7,7 @@ import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.componen
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

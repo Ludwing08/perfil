@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
+  correo = 'ludwing_2001@hotmail.com';
+  numero = '0984512632';
+  foto = '';
+
   constructor() { }
 
   ngOnInit(): void {
