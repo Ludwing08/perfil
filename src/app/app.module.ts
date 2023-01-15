@@ -7,6 +7,13 @@ import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.componen
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
+import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { InicioComponent } from './componentes/inicio/inicio.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { ContactameComponent } from './componentes/contactame/contactame.component';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +22,16 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
     EncabezadoComponent,
     PerfilComponent,
     HabilidadesComponent,
+    NavbarComponent,
+    InicioComponent,
+    EducacionComponent,
+    ProyectosComponent,
+    ContactameComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

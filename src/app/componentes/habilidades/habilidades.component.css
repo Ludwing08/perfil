@@ -1,0 +1,25 @@
+.circulo {
+    /* border: 3px solid #ddd; */
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  
+
+.circulo > .col #porcentaje {	
+	color: #76c6c8;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.circulo .col #habilidad{    
+	color: black;
+	font-size: 1rem;
+}

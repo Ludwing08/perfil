@@ -1,27 +1,33 @@
-.container{
-    background-color: burlywood;    
-}
-
 hr{
-    width: 30%;
+    width: 50%;
+    border-width: 3px;
+    color: white;
+    line-height: 0;
 }
 
 span a{
     text-decoration: none;
     margin: 5px;
     size: 50px;
+    line-height: 0;
 }
 span a i{
     color: white;
+    margin-bottom: 10px;    
+}
+
+.row{
+    padding-left: 30px;    
 }
 
 #autor{
-    color: whitesmoke;
-    font-size: 40px;  
+    
+    font-weight: 700;
+    padding: 0 10px;
 
 }
 
 #carrera{
-    color: aqua;
-    font-size: 30px;
+    color: #AADAE4;
+    font-size: 30px;    
 }

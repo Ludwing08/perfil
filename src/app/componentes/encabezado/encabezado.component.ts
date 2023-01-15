@@ -9,7 +9,7 @@ export class EncabezadoComponent implements OnInit {
 
   nombre:string='LUDWING';
   apellido:string= 'BARRIGA';
-  carrera:string = 'Ingeniería de Software';
+  carrera:string = 'Ingeniero de Software';
 
   constructor() { }
 

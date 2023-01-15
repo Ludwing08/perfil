@@ -1,0 +1,31 @@
+.card{
+    width: min-content;
+    height: 19rem;
+    text-align: center;
+    border-radius: 30%;
+    border-color: #76c6c8;        
+    border-width: 3px;
+}
+
+.iconos i{
+    width: 30%;
+    height: 40px;
+    border-radius: 50px;    
+    color: whitesmoke;
+    background: linear-gradient(90deg, rgba(143,93,236,1) 18%, rgba(101,92,240,1) 42%, rgba(47,96,249,1) 72%);         
+    padding-top: 3px;    
+}
+
+.iconos p{
+    color: black;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card-img-top{
+    margin: 5px;
+    width: 40%;  
+    border-radius: 10%;  
+}
