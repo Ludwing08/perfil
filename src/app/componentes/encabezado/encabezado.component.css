@@ -1,9 +1,3 @@
-.container{
-    display: block;
-    background: rgb(143,93,236);
-    background: linear-gradient(90deg, rgba(143,93,236,1) 18%, rgba(101,92,240,1) 42%, rgba(47,96,249,1) 72%);         
-}
-
 hr{
     width: 50%;
     border-width: 3px;
@@ -27,10 +21,9 @@ span a i{
 }
 
 #autor{
-    color: #ffffff;
-    font-size: 40px;  
-    margin-top: 55px;
-    line-height: 40px;
+    
+    font-weight: 700;
+    padding: 0 10px;
 
 }
 

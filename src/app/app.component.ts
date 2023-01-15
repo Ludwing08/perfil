@@ -7,7 +7,5 @@ import { Component, OnInit, Output } from '@angular/core';
 })
 export class AppComponent{
 
-  title = 'app-perfil';
-  habilidades ?: number[] = [30, 80, 70];
 
 }
