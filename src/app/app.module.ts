@@ -14,6 +14,8 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { ContactameComponent } from './componentes/contactame/contactame.component';
 
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,18 @@ import { ContactameComponent } from './componentes/contactame/contactame.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule    
+    FormsModule,
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#black",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+      backgroundColor:"#C7E596",
+      backgroundGradient:true,      
+    }) 
   ],
   providers: [],
   bootstrap: [AppComponent]
