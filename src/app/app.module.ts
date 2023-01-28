@@ -34,16 +34,15 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgCircleProgressModule.forRoot({
-      // set defaults here
-      radius: 100,
-      outerStrokeWidth: 16,
-      innerStrokeWidth: 8,
-      outerStrokeColor: "#black",
-      innerStrokeColor: "#C7E596",
-      animationDuration: 300,
-      backgroundColor:"#C7E596",
-      backgroundGradient:true,      
+    NgCircleProgressModule.forRoot({      
+      radius: 100,               
+      animationDuration: 300,       
+      unitsColor:"#FF5A5F",    
+      unitsFontSize:"15",    
+      subtitleColor:"#087E8B",
+      titleColor:"#FF5A5F",
+      titleFontSize:"30",
+      subtitleFontSize:"20"
     }) 
   ],
   providers: [],

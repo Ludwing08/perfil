@@ -1,3 +1,7 @@
+*{
+    background-color: aliceblue;
+}
+
 hr{
     width: 50%;
     border-width: 3px;

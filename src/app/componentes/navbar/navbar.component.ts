@@ -9,6 +9,8 @@ export class NavbarComponent implements OnInit {
 
   mdbCollapse?:string
 
+  selectedItem?: string
+
   rightAligned(mdbCollapse:string){
 
   }
@@ -18,5 +20,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

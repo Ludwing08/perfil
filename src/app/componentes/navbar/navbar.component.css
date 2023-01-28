@@ -1,16 +1,31 @@
-.container-fluid{  
+*{
+    background-color: aliceblue;
+}
+
+.container{  
     padding: 20px 10px;    
-    background: rgb(143,93,236);
-    background: linear-gradient(90deg, rgba(143,93,236,1) 18%, rgba(101,92,240,1) 42%, rgba(47,96,249,1) 72%);         
+    background-color: aliceblue;
+    /* background: rgb(143,93,236); */
+    /* background: linear-gradient(90deg, rgba(143,93,236,1) 18%, rgba(101,92,240,1) 42%, rgba(47,96,249,1) 72%);          */
 }
 
 .nav-item a{
-    color: whitesmoke;
+    color: #13315C;
     font-size: 19px;    
     padding: 20px;
 }
 
 .nav-item a:hover{    
-    background-color: white;
-    color: black;
+    background-color: #087E8B;
+    color: white;
+    font-weight: bold;
 }
+
+.nav-item:active{
+    font-weight: bold;
+}
+
+.nav-item.selected{
+    font-weight: bold;
+}
+

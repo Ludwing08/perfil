@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg bg-light shadow-sm p-3 mb-5 bg-body rounded">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg p-3">
+    <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -9,19 +9,21 @@
       <div class="d-flex">
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">        
+          <li class="nav-item selected" [ngClass]="{'selected': selectedItem === 'item1'}" (click)="selectedItem = 'item1'">
             <a class="nav-link active" [routerLink]="['/']">Sobre mí</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" [ngClass]="{'selected': selectedItem === 'item2'}" (click)="selectedItem = 'item2'">
             <a class="nav-link active" [routerLink]="['/educacion']">Educación</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" [ngClass]="{'selected': selectedItem === 'item3'}" (click)="selectedItem = 'item3'">
             <a class="nav-link active" [routerLink]="['/proyectos']">Proyectos</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" [ngClass]="{'selected': selectedItem === 'item4'}" (click)="selectedItem = 'item4'">
             <a class="nav-link active" [routerLink]="['/contactame']">Contactame</a>
           </li>
+          
+
         </ul>
       </div>
     </div>
