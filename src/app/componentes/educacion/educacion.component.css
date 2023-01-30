@@ -1,0 +1,107 @@
+*, .container{
+    background-color: aliceblue;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+
+li{
+    list-style-type: none;
+}
+
+.card-header{
+    display: flex;  
+    justify-content: space-between;  
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+h2.cert{
+    color: #13315C;
+    font-size: 40px;
+    text-align: center;
+}
+
+.card-header, .card-subtitle, .card-title, .fecha, .titulo{
+    color: #13315C;
+    background-color: rgba(14, 107, 168, 0.467);
+}
+
+.card-subtitle, .card-title, .fecha{        
+    font-weight: bold;
+    padding: 5px;   
+}
+
+.card-subtitle, .fecha{
+    font-size: 1.5em;
+}
+
+.card.logo{    
+    border-radius: 50%;       
+    width: 200px;
+    height: 200px;    
+}
+
+.card{
+    box-shadow: 7px 13px 15px 0px #888888;   
+}
+
+
+.col{
+    padding: 20px;
+}
+
+.card.certificado{    
+    border-color: black;    
+    width: 10cm;
+    height: 5cm;
+    line-height: 0.5;
+}
+
+.card-title.curso, .card-subtitle.curso{
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-subtitle.curso{
+    color: #888888;
+}
+
+.card-img-top.curso{
+    height: 115px;
+    
+}
+
+.fondo{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+li::before{
+    content: "\e0b7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #087E8B;
+}
+
+.card.certificado:hover{    
+    box-shadow: 0 0 10px #aaa;
+
+}
+
+a{
+    text-decoration-line: none;
+}

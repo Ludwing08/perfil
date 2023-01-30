@@ -1,0 +1,147 @@
+*, .container{
+    background-color: aliceblue;
+}
+
+.informacion-general{
+    display: flex;
+    align-items: center;       
+}
+
+.descripcion h2{
+    font-size: 70px;
+    line-height: 1.1;
+    color: #13315C;             
+    margin-right: 10px;
+    text-align: end;    
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.descripcion .texto{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #7f8daa;             
+    margin-right: 10px;          
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+
+
+
+  
+  /* CARDS */
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 350px;
+    max-height: 200px;
+    display: grid;
+    grid-template-rows: 10px 25px 50px 60px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .card__link,
+  .card__exit,
+  .card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .card__exit {
+    grid-row: 1/1;
+    justify-self: end;
+  }
+  
+  .card__icon {
+    grid-row: 3/5;
+    font-size: 17px;
+    padding-top: 10px;
+  }
+  
+  .card__title {
+    grid-row: 2/3;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 25px;
+  }
+  
+  .card__apply {
+    display: flex;
+    grid-row: 5/6;     
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  a{
+    text-decoration-line: none;
+  }  
+  
+  .card-1 {
+    background: rgb(19,49,92);
+background: linear-gradient(180deg, rgba(19,49,92,1) 19%, rgba(52,102,209,1) 61%, rgba(19,49,92,1) 96%);
+  }
+
+  .boton{
+    text-decoration-line: none;
+    background-color: #13315C;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 30px;
+
+  }
+
+  .botones{
+    display: flex;
+    justify-content: center;    
+    height: 200px;
+    align-items: center;
+    
+  }
+    
+
+  .boton:hover{
+    background-color: aliceblue;
+    color: #13315C;    
+    border-color: #13315C;
+  }
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+  
