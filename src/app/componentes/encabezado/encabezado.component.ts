@@ -1,19 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ComponentFactoryResolver, ViewContainerRef } from '@angular/core';
 
 @Component({
   selector: 'app-encabezado',
   templateUrl: './encabezado.component.html',
   styleUrls: ['./encabezado.component.css']
 })
-export class EncabezadoComponent implements OnInit {
+export class EncabezadoComponent implements OnInit {  
+  msg = 'Ludwing Barriga'
 
-  nombre:string='LUDWING';
-  apellido:string= 'BARRIGA';
-  carrera:string = 'Ingeniero de Software';
-
-  constructor() { }
+  constructor(    
+  ) {}
 
   ngOnInit(): void {
+    setInterval(() => {
+      this.msg = 'Ludwing Barriga '
+    }, 1000);
   }
 
 }

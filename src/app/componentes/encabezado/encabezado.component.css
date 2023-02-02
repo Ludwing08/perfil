@@ -1,37 +1,42 @@
+@font-face {
+    font-family: Thesignature;
+    src: url(../../../assets/fonts/Thesignature.otf) format("opentype");
+  }
+
+
 *{
     background-color: aliceblue;
 }
 
-hr{
-    width: 50%;
-    border-width: 3px;
-    color: white;
-    line-height: 0;
+.nombre{
+    width: 16ch;
+    animation: typing 3s steps(40,end);
+    animation-timing-function: cubic-bezier(0, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Thesignature';
+    font-size: 55px;
+    color: #13315C; 
+    font-weight: 550;
 }
 
-span a{
-    text-decoration: none;
-    margin: 5px;
-    size: 50px;
-    line-height: 0;
-}
-span a i{
-    color: white;
-    margin-bottom: 10px;    
+.col{    
+    display: grid;
+    place-items: center;
 }
 
-.row{
-    padding-left: 30px;    
-}
+@keyframes typing {
+    from{
+        width: 0;
 
-#autor{
+    }
     
-    font-weight: 700;
-    padding: 0 10px;
-
 }
 
-#carrera{
-    color: #AADAE4;
-    font-size: 30px;    
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
 }

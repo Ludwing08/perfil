@@ -7,7 +7,7 @@ import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.componen
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
@@ -15,6 +15,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { ContactameComponent } from './componentes/contactame/contactame.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { EmailService } from './servicios/email.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -30,10 +32,11 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     ProyectosComponent,
     ContactameComponent,
   ],
-  imports: [
+  imports: [    
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgCircleProgressModule.forRoot({      
       radius: 100,               
       animationDuration: 300,       
@@ -43,9 +46,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       titleColor:"#FF5A5F",
       titleFontSize:"30",
       subtitleFontSize:"20"
-    }) 
+    }),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
