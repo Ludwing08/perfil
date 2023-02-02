@@ -1,18 +1,25 @@
 <body>
 
-    
+
     <div class="container">
 
         <section class="description">
 
             <div class="text-description">
-                <h2 class="nombre"> 
-                   Ludwing Barriga
+                <h2 class="nombre">
+                    Ludwing Barriga
                 </h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Distinctio nostrum soluta provident tempore! Deserunt, eos nam! Odit eaque molestiae nisi,
-                vitae fuga modi a exercitationem maxime neque deleniti quas deserunt.
-
+                <div class="description-personal">
+                    Soy un apasionado por la tecnología y el desarrollo de software.
+                    Me gusta el desarrollo de aplicaciones web en tecnologías como Angular y Node.js.
+                    Me gusta los proyectos desafiantes y siempre estoy buscando aprender y mejorar mis habilidades.
+                    En mi tiempo libre disfruto de la música, tocar instrumentos, los deportes y viajar.
+                    Estoy disponible para nuevos proyectos y oportunidades de colaboración.                    
+                        <i class="fa-solid fa-music" style="margin: 2px 2px;"></i>
+                        <i class="fa-solid fa-guitar"style="margin: 2px 2px;"></i>
+                        <i class="fa-solid fa-futbol" style="margin: 2px 2px;"></i>
+                        <i class="fa-solid fa-car" style="margin: 2px 2px;"></i>                    
+                </div>
                 <div class="contacto">
 
                     <span class="col">
@@ -43,7 +50,7 @@
             </div>
 
             <div class="imagen">
-                <img src="./assets/img/developer.png" alt="developer">             
+                <img src="./assets/img/developer.png" alt="developer">
             </div>
 
 
@@ -51,260 +58,229 @@
 
         <h2 class="pregunta">¿A qué me dedico?</h2>
 
-        <section class="habilidades">
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
-            <div class="imagen">
-                <img src="./assets/img/front-end (2).png" alt="foto front end">
-            </div>
+            <section class="habilidades">
 
-            <div class="information">
-                <h3>Front End</h3>
-
-                <div class="icons">
-
-                    <img src="https://img.icons8.com/color/96/null/html-5--v1.png" style="width: 48px; height: 48px;"
-                        data-bs-toggle="tooltip" data-bs-title="HTML 5" />
-                    <img src="https://img.icons8.com/color/48/null/css3.png" style="width: 48px; height: 48px;"
-                        data-bs-toggle="tooltip" data-bs-title="CSS" />
-                    <img src="https://img.icons8.com/color/48/null/javascript--v1.png"
-                        style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="JAVASCRIPT" />
-                    <img src="https://img.icons8.com/fluency/48/null/angularjs.png" style="width: 48px; height: 48px;"
-                        data-bs-toggle="tooltip" data-bs-title="ANGULAR JS" />
+                <div class="imagen">
+                    <img src="./assets/img/front-end (2).png" alt="foto front end">
                 </div>
 
-                <div class="description-habilidad">
-                    <ul>
-                        <li>
-                            He construido interfaces para sitio webs responsivas con Angular.
-                        </li>
-                        <li>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <div class="information">
+                    <h3>Front End</h3>
 
-                        </li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, reiciendis vitae! Magni hic
-                            officia illo eveniet delectus deserunt, expedita non officiis obcaecati, repellendus dicta
-                            eos
-                            exercitationem totam? Explicabo, veritatis sapiente!
+                    <div class="icons">
 
-                        </li>
-                    </ul>
+                        <img src="https://img.icons8.com/color/96/null/html-5--v1.png"
+                            style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="HTML 5" />
+                        <img src="https://img.icons8.com/color/48/null/css3.png" style="width: 48px; height: 48px;"
+                            data-bs-toggle="tooltip" data-bs-title="CSS" />
+                        <img src="https://img.icons8.com/color/48/null/javascript--v1.png"
+                            style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="JAVASCRIPT" />
+                        <img src="https://img.icons8.com/fluency/48/null/angularjs.png"
+                            style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="ANGULAR JS" />
+                    </div>
+
+                    <div class="description-habilidad">
+                        <ul>
+                            <li>
+                                He construido interfaces para sitio webs de manera responsiva.
+                            </li>
+                            <li>
+                                Utilizo tecnologías como Angular, HTML, CSS y JavaScript
+                            </li>                            
+                        </ul>
+                    </div>
+
+                    <div class="porcent">
+
+                        <circle-progress [percent]="95" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'HTML'"></circle-progress>
+
+                        <circle-progress [percent]="85" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'CSS'"></circle-progress>
+
+                        <circle-progress [percent]="70" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'JAVASCRIPT'"></circle-progress>
+
+                        <circle-progress [percent]="80" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'ANGULAR'"></circle-progress>
+                    </div>
                 </div>
 
-                <div class="porcent">
+            </section>
 
-                    <circle-progress [percent]="95" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'HTML'"></circle-progress>
+        </div>
 
-                    <circle-progress [percent]="85" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'CSS'"></circle-progress>
 
-                    <circle-progress [percent]="70" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'JAVASCRIPT'"></circle-progress>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
-                    <circle-progress [percent]="80" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'ANGULAR'"></circle-progress>
-                </div>
-            </div>
+            <section class="habilidades">
 
-        </section>
-
-        <section class="habilidades">
-
-            <div class="imagen">
-                <img src="./assets/img/back-end.png" alt="back end">
-            </div>
-
-            <div class="information">
-                <h3>Back End</h3>
-
-                <div class="icons">
-
-                    <img src="https://img.icons8.com/color/48/null/java-coffee-cup-logo--v1.png"
-                        style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="JAVA" />
-                    <img src="https://img.icons8.com/dusk/64/null/php-logo.png" style="width: 48px; height: 48px;"
-                        data-bs-toggle="tooltip" data-bs-title="PHP" />
-                    <img src="https://img.icons8.com/fluency/48/null/typescript--v1.png"
-                        style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="TYPESCRIPT" />
-                    <img src="https://img.icons8.com/fluency/48/null/node-js.png" style="width: 48px; height: 48px;"
-                        data-bs-toggle="tooltip" data-bs-title="NODE JS" />
+                <div class="imagen">
+                    <img src="./assets/img/back-end.png" alt="back end">
                 </div>
 
-                <div class="description-habilidad">
-                    <ul>
-                        <li>
-                            He construido interfaces para sitio webs responsivas con Angular.
-                        </li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <div class="information">
+                    <h3>Back End</h3>
 
-                        </li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, reiciendis vitae! Magni hic
-                            officia illo eveniet delectus deserunt, expedita non officiis obcaecati, repellendus dicta
-                            eos
-                            exercitationem totam? Explicabo, veritatis sapiente!
+                    <div class="icons">
 
-                        </li>
-                    </ul>
-                </div>
+                        <img src="https://img.icons8.com/color/48/null/java-coffee-cup-logo--v1.png"
+                            style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="JAVA" />
+                        <img src="https://img.icons8.com/dusk/64/null/php-logo.png" style="width: 48px; height: 48px;"
+                            data-bs-toggle="tooltip" data-bs-title="PHP" />
+                        <img src="https://img.icons8.com/fluency/48/null/typescript--v1.png"
+                            style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="TYPESCRIPT" />
+                        <img src="https://img.icons8.com/fluency/48/null/node-js.png" style="width: 48px; height: 48px;"
+                            data-bs-toggle="tooltip" data-bs-title="NODE JS" />
+                    </div>
 
-                <div class="porcent">
-                    
-                    <circle-progress [percent]="70" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'JAVA'"></circle-progress>
+                    <div class="description-habilidad">
+                        <ul>
+                            <li>
+                                Para la creación de aplicaciones utilizo NODE.
+                            </li>
+                            <li>
+                                La creación de servicios lo realizo con Java, TypeScript o PHP.
+                            </li>
+                            <li>
+                                Me gusta llevar buenas prácticas de programación para un mejor desarrollo backend.
+                            </li>
+                        </ul>
+                    </div>
 
-                    <circle-progress [percent]="70" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'PHP'"></circle-progress>
+                    <div class="porcent">
 
-                    <circle-progress [percent]="85" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'TYPESCRIPT'"></circle-progress>
+                        <circle-progress [percent]="70" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'JAVA'"></circle-progress>
 
-                    <circle-progress [percent]="80" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'NODE JS'"></circle-progress>
-                </div>
+                        <circle-progress [percent]="70" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'PHP'"></circle-progress>
 
-            </div>
-        </section>
+                        <circle-progress [percent]="85" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'TYPESCRIPT'"></circle-progress>
 
-        <section class="habilidades">
-
-            <div class="imagen">
-                <img src="./assets/img/ux.png" alt="UX">
-            </div>
-
-            <div class="information">
-
-                <h3>Diseño UX</h3>
-
-                <div class="icons">
-
-                    <img src="https://img.icons8.com/color/48/null/figma--v1.png" style="width: 48px; height: 48px;"
-                        data-bs-toggle="tooltip" data-bs-title="FIGMA" />
-                </div>
-
-                <div class="description-habilidad">
-                    <ul>
-                        <li>
-                            He construido interfaces para sitio webs responsivas con Angular.
-                        </li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-
-                        </li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, reiciendis vitae! Magni hic
-                            officia illo eveniet delectus deserunt, expedita non officiis obcaecati, repellendus dicta
-                            eos
-                            exercitationem totam? Explicabo, veritatis sapiente!
-
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="porcent">
-
-                    <circle-progress [percent]="75" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'FIGMA'"></circle-progress>
+                        <circle-progress [percent]="80" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'NODE JS'"></circle-progress>
+                    </div>
 
                 </div>
-            </div>
+            </section>
 
-        </section>
+        </div>
 
-        <section class="habilidades">
-            <div class="imagen">
-                <img src="./assets/img/db.png" alt="base de datos">
-            </div>
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <section class="habilidades">
 
-            <div class="information">
-
-                <h3>Base de datos</h3>
-
-                <div class="icons">
-
-                    <img src="https://img.icons8.com/color/48/null/mysql-logo.png" style="width: 48px; height: 48px;"
-                        data-bs-toggle="tooltip" data-bs-title="MYSQL" />
-                    <img src="https://img.icons8.com/color/48/null/microsoft-sql-server.png"
-                        style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="MSSQL" />
-                    <img src="https://img.icons8.com/color/48/null/mongodb.png" style="width: 48px; height: 48px;"
-                        data-bs-toggle="tooltip" data-bs-title="MONGO DB" />
-                    <img src="https://img.icons8.com/plasticine/100/null/oracle-pl-sql--v3.png"
-                        style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="ORACLE" />
-                    <img src="https://img.icons8.com/color/48/null/firebase.png" style="width: 48px; height: 48px;"
-                        data-bs-toggle="tooltip" data-bs-title="FIREBASE" />
+                <div class="imagen">
+                    <img src="./assets/img/ux.png" alt="UX">
                 </div>
 
+                <div class="information">
 
-                <div class="description-habilidad">
-                    <ul>
-                        <li>
-                            He construido interfaces para sitio webs responsivas con Angular.
-                        </li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <h3>Diseño UX</h3>
 
-                        </li>
-                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, reiciendis vitae! Magni hic
-                            officia illo eveniet delectus deserunt, expedita non officiis obcaecati, repellendus dicta
-                            eos
-                            exercitationem totam? Explicabo, veritatis sapiente!
+                    <div class="icons">
 
-                        </li>
-                    </ul>
+                        <img src="https://img.icons8.com/color/48/null/figma--v1.png" style="width: 48px; height: 48px;"
+                            data-bs-toggle="tooltip" data-bs-title="FIGMA" />
+                    </div>
+
+                    <div class="description-habilidad">
+                        <ul>
+                            <li>
+                                He creado diseños para aplicaciones web y móviles.
+                            </li>
+                            <li>
+                                En mis diseños me gusta mantener la experiencia de usaurio para mejores resultados.
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="porcent">
+
+                        <circle-progress [percent]="75" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'FIGMA'"></circle-progress>
+
+                    </div>
                 </div>
 
-                <div class="porcent">
-
-                    <circle-progress [percent]="90" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'MYSQL'"></circle-progress>
-
-                    <circle-progress [percent]="80" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'MSSQL'"></circle-progress>
-
-                    <circle-progress [percent]="70" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'MONGO DB'"></circle-progress>
-
-                    <circle-progress [percent]="80" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'ORACLE'"></circle-progress>
-
-                    <circle-progress [percent]="75" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
-                        [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
-                        [animationDuration]="300" [subtitle]="'FIREBASE'"></circle-progress>
+            </section>
+        </div>
 
 
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
 
-
+            <section class="habilidades">
+                <div class="imagen">
+                    <img src="./assets/img/db.png" alt="base de datos">
                 </div>
 
-            </div>
-        </section>
+                <div class="information">
+
+                    <h3>Base de datos</h3>
+
+                    <div class="icons">
+
+                        <img src="https://img.icons8.com/color/48/null/mysql-logo.png"
+                            style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="MYSQL" />
+                        <img src="https://img.icons8.com/color/48/null/microsoft-sql-server.png"
+                            style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="MSSQL" />
+                        <img src="https://img.icons8.com/color/48/null/mongodb.png" style="width: 48px; height: 48px;"
+                            data-bs-toggle="tooltip" data-bs-title="MONGO DB" />
+                        <img src="https://img.icons8.com/plasticine/100/null/oracle-pl-sql--v3.png"
+                            style="width: 48px; height: 48px;" data-bs-toggle="tooltip" data-bs-title="ORACLE" />
+
+                    </div>
 
 
+                    <div class="description-habilidad">
+                        <ul>
+                            <li>
+                                Tengo experiencia trabajando con diferentes SGBD.
+                            </li>
+                            <li>
+                                Me gusta realizar modelar correctamente una base de datos para un manejo eficiente de la información.
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div class="porcent">
 
+                        <circle-progress [percent]="90" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'MYSQL'"></circle-progress>
 
+                        <circle-progress [percent]="80" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'MSSQL'"></circle-progress>
 
+                        <circle-progress [percent]="70" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'MONGO DB'"></circle-progress>
 
+                        <circle-progress [percent]="80" [radius]="75" [outerStrokeWidth]="8" [innerStrokeWidth]="3"
+                            [outerStrokeColor]="'#13315C'" [innerStrokeColor]="'#13315C'" [animation]="true"
+                            [animationDuration]="300" [subtitle]="'ORACLE'"></circle-progress>
 
-        <img src="https://img.icons8.com/sf-regular/48/null/github.png" />
+                    </div>
 
+                </div>
+            </section>
 
+        </div>
 
-        <a href="#" data-bs-toggle="tooltip" data-bs-title="ETL">
-            <img
-                src="https://img.icons8.com/external-outline-black-m-oki-orlando/32/null/external-etl-data-warehouse-outline-black-m-oki-orlando.png" />
-        </a>
-
-        <img
-            src="https://img.icons8.com/external-flat-circle-design-circle/100/null/external-Developer-data-science-flat-circle-design-circle.png" />
     </div>
 
 </body>

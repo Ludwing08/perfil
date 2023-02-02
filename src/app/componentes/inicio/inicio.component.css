@@ -21,7 +21,8 @@ svg{
   }
 
   .text-description{
-    font-size: 30px;          
+    font-size: 30px;      
+    
   }
 
   .imagen{
@@ -34,7 +35,11 @@ svg{
     max-height: 50%;
   }
 
-  
+  .description-personal{
+    color: #7f8daa;       
+    font-size: 25px;
+  }
+
   h2.nombre{    
     font-size: 70px;
     line-height: 1.1;

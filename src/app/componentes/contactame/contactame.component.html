@@ -1,18 +1,19 @@
 <body>
+  <div class="container">
     <form [formGroup]="forma" (ngSubmit)="enviarMensaje(nombreInput.value, correoInput.value, mensajeInput.value)">
-        <div class="form-group">
-          <label>Nombre</label>
-          <input #nombreInput type="text" formControlName="nombre" class="form-control" name="nombre">
-        </div>
-        <div class="form-group">
-          <label>Correo</label>
-          <input #correoInput type="email" formControlName="correo" class="form-control" name="correo">
-        </div>
-        <div class="form-group">
-          <label>Mensaje</label>
-          <textarea #mensajeInput formControlName="mensaje" class="form-control" name="mensaje"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>      
-
+      <div class="form-group">
+        <label>Nombre</label>
+        <input #nombreInput type="text" formControlName="nombre" class="form-control" name="nombre">
+      </div>
+      <div class="form-group">
+        <label>Correo</label>
+        <input #correoInput type="email" formControlName="correo" class="form-control" name="correo">
+      </div>
+      <div class="form-group">
+        <label>Mensaje</label>
+        <textarea #mensajeInput formControlName="mensaje" class="form-control" name="mensaje"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
 </body>

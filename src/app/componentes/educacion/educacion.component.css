@@ -88,6 +88,9 @@ h2.cert{
     border-top-right-radius: 5px;
 }
 
+li{
+    font-size: 20px;
+}
 
 li::before{
     content: "\e0b7";

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as  AOS from 'aos';
 
 declare var bootstrap: any;
 
@@ -14,12 +15,17 @@ export class InicioComponent implements OnInit {
 
   
   constructor() { }
+  
 
   ngOnInit(): void {
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
-    })   
+    })   ;
+
+    AOS.init();
+    window.addEventListener('load',AOS.refresh)
+
   }
 
   title = 'app-perfil';
