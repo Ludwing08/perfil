@@ -22,4 +22,11 @@ export class NavbarComponent implements OnInit {
   }
 
 
+  cv(){
+    const link = document.createElement('a');
+    link.href = '../../assets/cv/cv.pdf';
+    link.download = 'cv.pdf';
+    link.click();
+  }
+
 }
