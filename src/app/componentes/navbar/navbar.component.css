@@ -29,3 +29,12 @@
     font-weight: bold;
 }
 
+.btn , .btn:hover{    
+    border-style: none;
+}
+.nav-item.cv, .nav-link.active.cv, .nav-item.cv a:hover{    
+    background-color: #FF5A5F;
+    color: white;
+    font-weight: bold;
+}
+

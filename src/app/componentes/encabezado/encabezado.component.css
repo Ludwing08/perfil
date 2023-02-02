@@ -11,8 +11,7 @@
 .nombre{
     width: 16ch;
     animation: typing 3s steps(40,end);
-    animation-timing-function: cubic-bezier(0, 0.82, 0.165, 1);
-    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0.82, 0.165, 1);    
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
